@@ -54,15 +54,12 @@ export default function Clientes() {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container py-4">
       {!mostrarFormulario ? (
         <>
-          <div className="flex justify-between items-center mb-4">
-            <h1 className="text-3xl font-bold text-yellow-500">Gestión de Clientes</h1>
-            <button
-              onClick={handleMostrarFormulario}
-              className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600"
-            >
+          <div className="d-flex justify-content-between align-items-center mb-3">
+            <h1 className="text-primary fs-2">Gestión de Clientes</h1>
+            <button className="btn btn-primary" onClick={handleMostrarFormulario}>
               Crear Cliente
             </button>
           </div>
